@@ -44,7 +44,6 @@
   position: sticky;
   z-index: 100;
 }
-
 .header .bgRosaPastel {
   background-color: rgba(255, 235, 218, 0.8);
 }
@@ -52,7 +51,6 @@
 .navbar-light .navbar-nav .nav-link.coral {
   color: coral;
 }
-
 .navbar-light .navbar-nav .nav-link.coral:hover {
   background-color: rgba(255, 255, 255, 0.87);
   border-bottom: 1px solid #D83E23;
@@ -78,7 +76,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .galeria {
@@ -109,7 +107,7 @@
   width: 90%;
   height: 90%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   /* border: 2px solid coral;*/
   border: 2px solid coral;
@@ -141,13 +139,12 @@
 .carousel {
   max-height: 300px; /* Establece la altura máxima deseada para el carrusel */
 }
-
 .carousel .carousel-item img {
   max-height: 300px; /* Ajusta la altura máxima de las imágenes de las diapositivas */
   -o-object-fit: cover;
-  object-fit: cover; /* Evita la deformación y recorta la imagen si es necesario */
+     object-fit: cover; /* Evita la deformación y recorta la imagen si es necesario */
   -o-object-position: botton;
-  object-position: botton;
+     object-position: botton;
 }
 
 .card-text {
@@ -192,7 +189,6 @@
   border-radius: 5px;
   border: 1px solid #D83E23;
 }
-
 .boton:hover {
   color: #fff;
   background-color: rgba(216, 62, 35, 0.7803921569);
@@ -207,26 +203,22 @@
   text-align: center;
   border-top: 1px solid coral;
 }
-
 .footer .icon {
   font-size: 3rem;
   color: #D83E23;
   padding-right: 15px;
 }
-
 .footer .contenedorMapaInfo {
   margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   -moz-column-gap: 50px;
-  column-gap: 50px;
+       column-gap: 50px;
 }
-
 .footer .contenedorMapaInfo .contenedorInfo {
   text-align: left;
 }
-
 .footer .contenedorMapaInfo .contenedorInfo .parrafoInfoFooter {
   padding-bottom: 10px;
 }
@@ -274,6 +266,4 @@ suscribite {
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
-} 
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

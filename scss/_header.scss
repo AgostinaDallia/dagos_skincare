@@ -1,0 +1,22 @@
+.header{
+    margin-top: 0px;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    .bgRosaPastel{
+        background-color:#ffebdacc  ;  
+    } 
+}
+
+.navbar-light .navbar-nav .nav-link.coral{
+    color: coral;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.87);
+         border-bottom: 1px solid #D83E23;
+    }
+}
+
+.logo{
+    width: 190px;
+    height: 30%;
+}

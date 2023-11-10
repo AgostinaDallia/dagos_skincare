@@ -1,0 +1,74 @@
+/*FOOTER*/
+.footer{
+    background-color:#FFF4EA;
+    color: #333;
+    padding:10px;
+    text-align: center;
+    border-top: 1px solid coral;
+    .icon{
+        font-size: 3rem;
+        color: #D83E23;
+        padding-right: 15px ;
+    }
+    .contenedorMapaInfo{
+        margin:50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+        .contenedorInfo{
+            text-align: left;
+            .parrafoInfoFooter{
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+    padding: 20px 20px;
+    border-top: 1px solid coral;
+}
+
+/* Estilos de las columnas del footer */
+.footer-column {
+    flex: 1;
+    text-align: left;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+suscribite{
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}

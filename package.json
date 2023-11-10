@@ -1,0 +1,15 @@
+{
+  "name": "preentrega2_agostinadallia_46960",
+  "version": "1.0.0",
+  "description": "proyecto preEntrega3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/AgostinaDallia/dagos_skincare.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

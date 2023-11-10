@@ -1,0 +1,16 @@
+/*CORPORAL*/
+.carousel {
+    max-height: 300px; /* Establece la altura máxima deseada para el carrusel */
+    .carousel-item img {
+        max-height: 300px; /* Ajusta la altura máxima de las imágenes de las diapositivas */
+        object-fit: cover; /* Evita la deformación y recorta la imagen si es necesario */
+        object-position:  botton;
+    }
+}
+
+
+.card-text{
+    text-align: center;
+}
+
+
