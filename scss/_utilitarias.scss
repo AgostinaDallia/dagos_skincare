@@ -1,7 +1,8 @@
 
 .h1{
-    color: #D83E23;
-    font-weight: bold ;
+    /*color: #D83E23;*/
+    color:#7B4728;
+    font-weight: lighter;
     text-align: center;
 }
 .h2{
@@ -14,6 +15,9 @@
     text-align: center;
     font-weight: bold;
 }
+.h3{
+    @include titulos( #7B4728,none,center);
+}
 
 .precio{
     color:#D83E23;
@@ -21,4 +25,8 @@
     font-weight: bold;
     font-size: 1.25rem;
 
+}
+span{
+    color:#7B4728;
+    font-weight: bold;
 }

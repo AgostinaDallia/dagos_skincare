@@ -4,7 +4,7 @@
     position: sticky;
     z-index: 100;
     .bgRosaPastel{
-        background-color:#ffebdacc  ;  
+        background-color:map-get($map: $color-fondo, $key:fondo-rosita ) ;  
     } 
 }
 

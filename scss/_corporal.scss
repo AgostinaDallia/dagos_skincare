@@ -5,6 +5,7 @@
         max-height: 300px; /* Ajusta la altura máxima de las imágenes de las diapositivas */
         object-fit: cover; /* Evita la deformación y recorta la imagen si es necesario */
         object-position:  botton;
+        
     }
 }
 
@@ -12,5 +13,7 @@
 .card-text{
     text-align: center;
 }
-
+.foto{
+    transform: scale(0.8);
+}
 

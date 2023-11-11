@@ -4,3 +4,8 @@
     justify-content: $justificacion;
     align-items: $alineacion;
 }
+@mixin titulos ($color, $font-weigth, $text-aling){
+    color: $color;
+    font-weight: $font-weigth;
+    text-align: $text-aling;
+}
