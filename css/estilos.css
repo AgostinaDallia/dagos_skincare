@@ -195,7 +195,7 @@ span {
 
 @media screen and (max-width: 639px) {
   .bannerImg {
-    background-image: url("ruta/a/tu/imagen_small.jpg"); /* Cambia la ruta por la URL de tu imagen más pequeña */
+    background-image: url("../assets/img/rutina hidra.png"); /* Cambia la ruta por la URL de tu imagen más pequeña */
     background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
   }
   .gigante {
@@ -204,7 +204,7 @@ span {
 }
 @media screen and (max-width: 640px) {
   .bannerImg {
-    background-image: url("ruta/a/tu/imagen_small.jpg"); /* Cambia la ruta por la URL de tu imagen más pequeña */
+    background-image: url("../assets/img/rutinafacial-responsive.png"); /* Cambia la ruta por la URL de tu imagen más pequeña */
     background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
   }
   .gigante {
