@@ -33,7 +33,7 @@
 }
 
 .h5 {
-  color: #000000;
+  color: #7B4728;
   text-align: center;
   font-weight: bold;
 }
@@ -54,6 +54,33 @@
 span {
   color: #7B4728;
   font-weight: bold;
+}
+
+.hijo, .corpo {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.hijo img, .corpo img {
+  width: 85%;
+  height: 85%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  /* margin-top: 20px;*/
+  transition: transform 1s ease-in-out;
+  /* filter: grayscale(20%);*/
+}
+.hijo img:hover, .corpo img:hover {
+  transform: scale(1.1);
 }
 
 .header {
@@ -126,33 +153,6 @@ span {
   background-image: linear-gradient(to bottom, #fde5d0, #ffe9e3, #ffeff3, #fef8fd, #ffffff);
 }
 
-.hijo {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: black;
-  margin-bottom: 10px;
-}
-
-.hijo img {
-  width: 85%;
-  height: 85%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid white;
-  /* margin-top: 20px;*/
-  transition: transform 1s ease-in-out;
-  /* filter: grayscale(20%);*/
-}
-.hijo img:hover {
-  transform: scale(1.1);
-}
-
 .texto {
   padding: 20px 100px;
   color: #7B4728;
@@ -180,6 +180,15 @@ span {
   position: relative;
 }
 
+.bannerImg2 {
+  background-image: url("../assets/img/rutinafacial-responsive.png"); /* Cambia la ruta por la URL de tu imagen */
+  /*background-size: 100% 500px; Ajusta el tamaño de la imagen según tus necesidades */
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: 500px;*/
+  position: relative;
+}
+
 .gigante {
   position: absolute;
   bottom: 0;
@@ -190,22 +199,63 @@ span {
   font-size: 6rem; /* Ajusta el tamaño de la fuente según tus necesidades */
 }
 
-@media screen and (max-width: 639px) {
+.imagen-container {
+  position: relative;
+  overflow: hidden;
+  transition: transform 5s ease;
+}
+
+/* Estilo para la imagen que se muestra al pasar el mouse */
+.imagen-container:hover img {
+  transform: scale(0.9);
+  max-width: 100%;
+}
+
+/* Otra imagen (opcional) */
+.imagen-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: none;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.imagen-container:hover .imagen-hover {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 640px) {
   .bannerImg {
     background-image: url("../assets/img/rutina hidra.png"); /* Cambia la ruta por la URL de tu imagen más pequeña */
     background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
+    display: block;
+  }
+  .bannerImg2 {
+    background-image: url("../assets/img/rutinafacial-responsive.png"); /* Cambia la ruta por la URL de tu imagen más pequeña */
+    background-size: 100% 500px; /* Ajusta el tamaño según tus necesidades */
+    display: none;
   }
   .gigante {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
   .bannerImg {
-    background-image: url("../assets/img/rutinafacial-responsive.png"); /* Cambia la ruta por la URL de tu imagen más pequeña */
+    display: none;
+    background-image: url("../assets/img/rutina hidra.png"); /* Cambia la ruta por la URL de tu imagen más pequeña */
     background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
   }
+  .bannerImg2 {
+    background-image: url("../assets/img/rutinafacial-responsive.png"); /* Cambia la ruta por la URL de tu imagen más pequeña */
+    background-size: 100% 500px; /* Ajusta el tamaño según tus necesidades */
+    display: block;
+  }
   .gigante {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 /*CORPORAL*/
@@ -226,6 +276,12 @@ span {
 
 .foto {
   transform: scale(0.8);
+}
+
+.corpo {
+  width: auto;
+  height: auto;
+  padding: 4px;
 }
 
 /*RECOMENDADOS*/

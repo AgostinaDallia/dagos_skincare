@@ -16,4 +16,10 @@
 .foto{
     transform: scale(0.8);
 }
+.corpo{
+    @extend .hijo;
+    width:auto;
+    height:auto;
+   padding: 4px;
+}
 

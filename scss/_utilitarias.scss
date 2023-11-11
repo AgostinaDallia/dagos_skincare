@@ -15,7 +15,7 @@
 }
 
 .h5{
-    color: #000000;
+    color: #7B4728;
     text-align: center;
     font-weight: bold;
 }
@@ -34,4 +34,30 @@
 span{
     color:#7B4728;
     font-weight: bold;
+}
+.hijo{
+    width:200px;
+    height:200px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    color:black;
+    margin-bottom: 10px;
+}
+.hijo img{
+    width:85%;
+    height:85%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:5px solid white;
+   /* margin-top: 20px;*/
+    transition: transform 1s ease-in-out;
+   /* filter: grayscale(20%);*/
+    &:hover{
+        transform: scale(1.1);
+      
+    }
+    
 }
