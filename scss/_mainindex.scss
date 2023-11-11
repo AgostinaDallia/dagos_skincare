@@ -1,45 +1,48 @@
 
-    
-    .video-container {
-        position: relative;
+
+    .video1{
         width: 100%;
-        height: 350px;
+        height: auto;
+        display: none;
+        overflow: hidden;
+        position: relative;
+        object-fit: cover;
+    }
+    .video2{
+        width: 100%;
+        height: auto;
+        display: none;
         overflow: hidden;
     }
     
-    video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-       /*  background: rgba(0, 0, 0, 0.5); Fondo semitransparente para el efecto overlay */
-    }
-    
-    .imagenMov{
-        position: absolute;
-        left: -100%; /* Inicialmente fuera de la pantalla a la izquierda */
-        top: 50%;
-        transform: translateY(-50%);
-        animation: slideIn 3s forwards; /* Animación para desplazar la imagen hacia el centro */
-    }
-    
-    @keyframes slideIn {
-        to {
-            left: calc(75% - 175px); /* Desplazar la imagen horizontalmente hasta 350px desde la izquierda */
-            top: 50%; /* Centrar verticalmente la imagen */
-            transform: translateY(-50%);
+    @media screen and (min-width: 640px) {
+        .video1 {
+            display: block;
+        }
+
+        .video2 {
+            display: none;
         }
     }
+
+    @media screen and (max-width: 639px) {
+        .video1 {
+            display: none;
+         
+        }
+
+        .video2 {
+            display: block;
+          
+        }
+    }
+     
+ 
+
+
 .galeria{
     width:100%;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin:0 auto;
     display:flex;
     flex-wrap: wrap;
@@ -48,25 +51,26 @@
     align-content: center;
     gap:20px;
     overflow: hidden;
+    background-image: linear-gradient(to bottom, #fde5d0, #ffe9e3, #ffeff3, #fef8fd, #ffffff);
 }
 .hijo{
     width:200px;
     height:200px;
-    background-color: white;
     padding:20px;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
     color:black;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .hijo img{
     width:85%;
     height:85%;
     object-fit: cover;
     border-radius: 50%;
-    margin-top: 20px;
+    border:5px solid white;
+   /* margin-top: 20px;*/
     transition: transform 1s ease-in-out;
    /* filter: grayscale(20%);*/
     &:hover{
@@ -75,12 +79,8 @@
     }
     
 }
-.sombra{
-    box-shadow: 10px 10px 86px -41px rgba(0,0,0,0.23);
-    -webkit-box-shadow: 10px 10px 86px -41px rgba(0,0,0,0.23);
-    -moz-box-shadow: 10px 10px 86px -41px rgba(0,0,0,0.23);
-}
+
 .texto{
     padding: 20px 100px;
     color: map-get($map: $colorygrosor-tipografia, $key:texto-parrafo )   ;
-    background-image: linear-gradient(to bottom, #fde5d0, #ffe9e3, #ffeff3, #fef8fd, #ffffff);}
+    }

@@ -26,13 +26,19 @@
   text-align: center;
 }
 
+.h3 {
+  color: #7B4728;
+  font-weight: none;
+  text-align: center;
+}
+
 .h5 {
   color: #000000;
   text-align: center;
   font-weight: bold;
 }
 
-.h3 {
+.h6 {
   color: #7B4728;
   font-weight: none;
   text-align: center;
@@ -75,47 +81,42 @@ span {
   height: 30%;
 }
 
-.video-container {
-  position: relative;
+.video1 {
   width: 100%;
-  height: 350px;
+  height: auto;
+  display: none;
   overflow: hidden;
-}
-
-video {
-  width: 100%;
-  height: 100%;
+  position: relative;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+.video2 {
   width: 100%;
-  height: 100%;
-  /*  background: rgba(0, 0, 0, 0.5); Fondo semitransparente para el efecto overlay */
+  height: auto;
+  display: none;
+  overflow: hidden;
 }
 
-.imagenMov {
-  position: absolute;
-  left: -100%; /* Inicialmente fuera de la pantalla a la izquierda */
-  top: 50%;
-  transform: translateY(-50%);
-  animation: slideIn 3s forwards; /* Animación para desplazar la imagen hacia el centro */
+@media screen and (min-width: 640px) {
+  .video1 {
+    display: block;
+  }
+  .video2 {
+    display: none;
+  }
 }
-
-@keyframes slideIn {
-  to {
-    left: calc(75% - 175px); /* Desplazar la imagen horizontalmente hasta 350px desde la izquierda */
-    top: 50%; /* Centrar verticalmente la imagen */
-    transform: translateY(-50%);
+@media screen and (max-width: 639px) {
+  .video1 {
+    display: none;
+  }
+  .video2 {
+    display: block;
   }
 }
 .galeria {
   width: 100%;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -124,19 +125,19 @@ video {
   align-content: center;
   gap: 20px;
   overflow: hidden;
+  background-image: linear-gradient(to bottom, #fde5d0, #ffe9e3, #ffeff3, #fef8fd, #ffffff);
 }
 
 .hijo {
   width: 200px;
   height: 200px;
-  background-color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: black;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .hijo img {
@@ -145,7 +146,8 @@ video {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
-  margin-top: 20px;
+  border: 5px solid white;
+  /* margin-top: 20px;*/
   transition: transform 1s ease-in-out;
   /* filter: grayscale(20%);*/
 }
@@ -154,16 +156,9 @@ video {
   transform: scale(1.1);
 }
 
-.sombra {
-  box-shadow: 10px 10px 86px -41px rgba(0, 0, 0, 0.23);
-  -webkit-box-shadow: 10px 10px 86px -41px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 10px 10px 86px -41px rgba(0, 0, 0, 0.23);
-}
-
 .texto {
   padding: 20px 100px;
   color: #7B4728;
-  background-image: linear-gradient(to bottom, #fde5d0, #ffe9e3, #ffeff3, #fef8fd, #ffffff);
 }
 
 /*FACIAL*/
@@ -179,6 +174,43 @@ video {
   border-radius: 0.25rem;
 }
 
+.bannerImg {
+  background-image: url("../assets/img/rutina hidra.png"); /* Cambia la ruta por la URL de tu imagen */
+  background-size: 100% 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.gigante {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  margin: 0;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 6rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+}
+
+@media screen and (max-width: 639px) {
+  .bannerImg {
+    background-image: url("ruta/a/tu/imagen_small.jpg"); /* Cambia la ruta por la URL de tu imagen más pequeña */
+    background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
+  }
+  .gigante {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 640px) {
+  .bannerImg {
+    background-image: url("ruta/a/tu/imagen_small.jpg"); /* Cambia la ruta por la URL de tu imagen más pequeña */
+    background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
+  }
+  .gigante {
+    font-size: 1.5em;
+  }
+}
 /*CORPORAL*/
 .carousel {
   max-height: 300px; /* Establece la altura máxima deseada para el carrusel */

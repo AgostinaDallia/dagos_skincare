@@ -10,13 +10,18 @@
     color: #D83E23;
     text-align: center;
 }
+.h3{
+    @include titulos( #7B4728,none,center);
+}
+
 .h5{
     color: #000000;
     text-align: center;
     font-weight: bold;
 }
-.h3{
+.h6{
     @include titulos( #7B4728,none,center);
+
 }
 
 .precio{

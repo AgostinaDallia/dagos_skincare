@@ -9,4 +9,44 @@
     background-clip: border-box;
     /* border: 1px solid rgba(0,0,0,.125); */
     border-radius: 0.25rem; }
+
+   .bannerImg{
+    background-image: url('../assets/img/rutina\ hidra.png'); /* Cambia la ruta por la URL de tu imagen */
+    background-size: 100% 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    position: relative;
+   }
+   .gigante{
+    
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        margin: 0;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.719);
+        font-size: 6rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+     
+    }
    
+    @media screen and (max-width: 639px) {
+        .bannerImg{
+            background-image: url('ruta/a/tu/imagen_small.jpg'); /* Cambia la ruta por la URL de tu imagen más pequeña */
+            background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
+        }
+
+       .gigante{
+            font-size: 1.5em; 
+        }
+    }
+    @media screen and (max-width: 640px) {
+        .bannerImg{
+            background-image: url('ruta/a/tu/imagen_small.jpg'); /* Cambia la ruta por la URL de tu imagen más pequeña */
+            background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
+        }
+
+       .gigante{
+            font-size: 1.5em; 
+        }
+    }
