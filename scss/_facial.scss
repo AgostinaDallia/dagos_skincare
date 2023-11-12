@@ -9,34 +9,6 @@
     background-clip: border-box;
     /* border: 1px solid rgba(0,0,0,.125); */
     border-radius: 0.25rem; }
-
-   .bannerImg{
-    background-image: url('../assets/img/rutina\ hidra.png'); /* Cambia la ruta por la URL de tu imagen */
-    background-size: 100% 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
-    position: relative;
-   }
-   .bannerImg2{
-    background-image: url('../assets/img/rutinafacial-responsive.png'); /* Cambia la ruta por la URL de tu imagen */
-    /*background-size: 100% 500px; Ajusta el tamaño de la imagen según tus necesidades */
-    background-repeat: no-repeat;
-    width: 100%;
-   /* height: 500px;*/
-    position: relative;
-
-   }
-   .gigante{
-    
-        position: absolute;
-        bottom: 0;
-        left: 10px;
-        margin: 0;
-        padding: 10px;
-        color: rgba(255, 255, 255, 0.719);
-        font-size: 6rem; /* Ajusta el tamaño de la fuente según tus necesidades */
-         }
          
     .imagen-container {
         position: relative;
@@ -70,45 +42,46 @@
         
     }
 
-
-
-
-
-   
-    @media screen and (min-width: 640px) {
-        .bannerImg{
-            background-image: url('../assets/img/rutina\ hidra.png'); /* Cambia la ruta por la URL de tu imagen más pequeña */
-            background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
-            display: block;
+/*BANNER*/
+    .bannerImg {
+        background-image: url('../assets/img/rutina hidra.png'); /* Cambia la ruta por la URL de tu imagen */
+        background-size: 100% 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+        position: relative;
+      }
+      
+      .bannerImg2 {
+        background-image: url('../assets/img/rutinafacial-responsive.png'); /* Cambia la ruta por la URL de tu imagen */
+        /* background-size: 100% 500px; Ajusta el tamaño de la imagen según tus necesidades */
+        background-repeat: no-repeat;
+        width: 100%;
+        /* height: 500px; */
+        position: relative;
+      }
+      
+      /* Consulta de medios para dispositivos móviles */
+      .gigante{
+    
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        margin: 0;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.719);
+        font-size: 6rem; 
+         }
+      @media screen and (max-width: 767px) {
+        .bannerImg {
+          background-image: url('../assets/img/rutinafacial-responsive.png'); /* Cambia la ruta por la URL de tu imagen */
+          height: 200px; /* Ajusta la altura según tus necesidades */
         }
-        .bannerImg2{
-            background-image: url('../assets/img/rutinafacial-responsive.png'); /* Cambia la ruta por la URL de tu imagen más pequeña */
-            background-size: 100% 500px; /* Ajusta el tamaño según tus necesidades */
-            display: none;
-        }
-
-       .gigante{
-            font-size: 1.5rem; 
-        }
-    }
-
-    @media screen and (max-width: 639px)/*si tiene 639 o menos*/ {
-        .bannerImg{
-            display: none;
-            background-image: url('../assets/img/rutina\ hidra.png'); /* Cambia la ruta por la URL de tu imagen más pequeña */
-            background-size: 100% 150px; /* Ajusta el tamaño según tus necesidades */
-            
-        }
-        .bannerImg2{
-            background-image: url('../assets/img/rutinafacial-responsive.png'); /* Cambia la ruta por la URL de tu imagen más pequeña */
-            background-size: 100% 500px; /* Ajusta el tamaño según tus necesidades */
-            display: block;
+      
+        .bannerImg2 {
+          display: none; /* Oculta la segunda imagen en dispositivos móviles si es necesario */
         }
         .gigante{
-            font-size: 1.5rem; 
+            font-size: 4rem; 
         }
-    }
-        
-     
-      
-    
+      }

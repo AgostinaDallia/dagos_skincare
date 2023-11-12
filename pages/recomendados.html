@@ -49,49 +49,57 @@
         </header>
         <main>
        
-          <h1 class="h1 mt-4 mb-5">¿Sabés qué producto usar según tus necesidades?</h1>    
-         
+          <h1 class="h1 mt-4 mb-5">¿Sabés qué producto usar según tus <span>necesidades</span>?</h1>    
           <section class="tarjetaVideo container">
-              <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-md-6 text-center">
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dLFBTiP5WTI?si=vDMOD3Q61SOrLNqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- Clases para ocultar el iframe en pantallas medianas y grandes -->
+                    <div class="d-none d-md-block">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dLFBTiP5WTI?si=vDMOD3Q61SOrLNqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <!-- Clases para mostrar el iframe solo en pantallas medianas y pequeñas -->
+                    <div class="d-block d-md-none embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dLFBTiP5WTI?si=vDMOD3Q61SOrLNqP" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 text-center">
-                 <h3>Ácido Hialuronico</h3>
-                 <p>Este video te presenta el asombroso mundo del ácido hialurónico y sus beneficios para la piel. Descubre cómo esta sustancia puede hidratar, rejuvenecer y revitalizar tu piel, dándote un aspecto fresco y radiante. Acompáñanos en este viaje hacia una piel más saludable y joven.</p>
+                    <h3>Ácido Hialurónico</h3>
+                    <p>Este video te presenta el asombroso mundo del ácido hialurónico y sus beneficios para la piel. Descubre cómo esta sustancia puede hidratar, rejuvenecer y revitalizar tu piel, dándote un aspecto fresco y radiante. Acompáñanos en este viaje hacia una piel más saludable y joven.</p>
                 </div>
-              </div>
-          </section>
+            </div>
+        </section>
+
+          
           <div>
-            <table class="table table-warning mt-5 ">
+            <table class="table table-warning mt-5 bg">
               <thead>
                 <tr>
-                  <th scope="col">Tipo de piel</th>
-                  <th scope="col">Ácido Glicólico </th>
-                  <th scope="col">Ácido Salicílico</th>
-                  <th scope="col">Ácido Retinoico</th>
+                  <th class="h5" scope="col">Tipo de piel</th>
+                  <th class="h5" scope="col">Ácido Glicólico </th>
+                  <th class="h5" scope="col">Ácido Salicílico</th>
+                  <th class="h5" scope="col">Ácido Retinoico</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Acné</th>
-                  <td>SI</td>
-                  <td>SI</td>
-                  <td>SI</td>
+                  <th class="precio" scope="row">Acné</th>
+                  <td class="h6">SI</td>
+                  <td class="h6">SI</td>
+                  <td class="h6">SI</td>
                  
                 </tr>
                 <tr>
-                  <th scope="row">Exfoliante</th>
-                  <td>SI </td>
-                  <td>SI </td>
-                  <td>SI </td>
+                  <th class="precio" scope="row">Exfoliante</th>
+                  <td class="h6">SI </td>
+                  <td class="h6">SI </td>
+                  <td class="h6">SI </td>
                   
                 </tr>
                 <tr>
-                  <th scope="row">Anti edad</th>
-                  <td>SI</td>
-                  <td>NO</td>
-                  <td>SI</td>
+                  <th class="precio" scope="row">Anti edad</th>
+                  <td class="h6">SI</td>
+                  <td class="h6">NO</td>
+                  <td class="h6">SI</td>
                 </tr>
               </tbody>
             </table>
