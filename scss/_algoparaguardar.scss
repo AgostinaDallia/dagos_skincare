@@ -1,0 +1,39 @@
+
+    
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
+    
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       /*  background: rgba(0, 0, 0, 0.5); Fondo semitransparente para el efecto overlay */
+    }
+    
+    .imagenMov{
+        position: absolute;
+        left: -100%; /* Inicialmente fuera de la pantalla a la izquierda */
+        top: 50%;
+        transform: translateY(-50%);
+        animation: slideIn 3s forwards; /* Animación para desplazar la imagen hacia el centro */
+    }
+    
+    @keyframes slideIn {
+        to {
+            left: calc(75% - 175px); /* Desplazar la imagen horizontalmente hasta 350px desde la izquierda */
+            top: 50%; /* Centrar verticalmente la imagen */
+            transform: translateY(-50%);
+        }
+    }

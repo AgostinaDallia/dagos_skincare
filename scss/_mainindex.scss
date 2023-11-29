@@ -1,0 +1,61 @@
+
+
+    .video1{
+        width: 100%;
+        height: auto;
+        display: none;
+        overflow: hidden;
+        position: relative;
+        object-fit: cover;
+    }
+    .video2{
+        width: 100%;
+        height: auto;
+        display: none;
+        overflow: hidden;
+    }
+    
+    @media screen and (min-width: 640px) {
+        .video1 {
+            display: block;
+        }
+
+        .video2 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 639px) {
+        .video1 {
+            display: none;
+         
+        }
+
+        .video2 {
+            display: block;
+          
+        }
+    }
+     
+ 
+
+
+.galeria{
+    width:100%;
+    /*max-width: 1200px;*/
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap:20px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #fde5d0, #ffe9e3, #ffeff3, #fef8fd, #ffffff);
+}
+
+.texto{
+    padding: 20px 50px;
+    color: map-get($map: $colorygrosor-tipografia, $key:texto-parrafo )   ;
+    }
+

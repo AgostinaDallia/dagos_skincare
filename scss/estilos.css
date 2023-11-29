@@ -71,7 +71,8 @@ span {
 .hijo img, .corpo img {
   width: 85%;
   height: 85%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   border: 5px solid white;
   /* margin-top: 20px;*/
@@ -111,7 +112,8 @@ span {
   display: none;
   overflow: hidden;
   position: relative;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .video2 {
@@ -246,8 +248,10 @@ span {
 }
 .carousel .carousel-item img {
   max-height: 300px; /* Ajusta la altura máxima de las imágenes de las diapositivas */
-  object-fit: cover; /* Evita la deformación y recorta la imagen si es necesario */
-  object-position: botton;
+  -o-object-fit: cover;
+     object-fit: cover; /* Evita la deformación y recorta la imagen si es necesario */
+  -o-object-position: botton;
+     object-position: botton;
 }
 
 .card-text {
@@ -326,7 +330,8 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 .footer .contenedorMapaInfo .contenedorInfo {
   text-align: left;
@@ -378,20 +383,4 @@ suscribite {
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
-}
-
-.notfound {
-  height: 600px;
-}
-
-.aguita_rosa {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  background-image: url(../assets/img/fondoAguitaRosa.png);
-  width: 100%;
-  background-size: contain;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 2px solid coral;
-}
-
-
+}/*# sourceMappingURL=estilos.css.map */

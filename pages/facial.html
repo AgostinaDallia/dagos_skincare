@@ -3,8 +3,10 @@
     <head><!--todo dentro del head son config p el navegador-->
         <!--las etiq meta son de configuración-->
         <meta charset="UTF-8"><!--el contenido puede estar en español-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--un px es lo mismo en escritorio que en celular-->
-        <title>Facial</title><!--cerrada, es lo unico hasta aca que ve el usuario-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explora la gama exclusiva de productos para el cuidado facial de Dagos Skincare. Descubre la fusión perfecta entre la ciencia innovadora y los ingredientes naturales de alta calidad. Desde serums revitalizantes y cremas hidratantes hasta mascarillas rejuvenecedoras, nuestra colección ofrece soluciones personalizadas para cada tipo de piel. Sumérgete en la experiencia de skincare de lujo de Dagos y descubre la clave para una piel radiante y saludable.">
+        <meta name="keywords" content="Dagos Skincare, cuidado facial, productos faciales, cuidado de la piel, sérum facial, cremas hidratantes, mascarillas faciales, rutina de cuidado facial, ingredientes naturales, rejuvenecimiento facial, belleza facial, productos para el cutis, skincare de lujo, tratamientos faciales, productos dermatológicos, productos para pieles sensibles, cuidado antienvejecimiento, cuidado facial diario">
+        <title>Facial | Dagos Skincare</title><!--cerrada, es lo unico hasta aca que ve el usuario-->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
          <!--link de css bootstrap--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css">
@@ -43,53 +45,56 @@
                   </div>
                 </div>
               </nav>
-             
+
         </header>
 
         <main>
        
-            <div > 
-              <img class="w-100 " height="300" src="../assets/img/rutina hidra.png" alt="">
+            <div class="bannerImg"> 
+              <h1 class="gigante">rutina facial</h1>
+            </div>
+            <div class="bannerImg2"> 
+              <h1 class="gigante">rutina facial</h1>
             </div>
               
             <section>                  <!--GALERIA RESPONSIVE-->
-            <div class="row row-cols-1 row-cols-md-4 g-4 mb-5 pb-5 bgRosaPastel w-100 justify-content-center">
-              <h2 class="text-center row justify-content-center align-items-center">¿Como usar tu rutina Dagos?</h2>
+              <div class="row row-cols-2 row-cols-md-4 g-4 mb-5 pb-5 bgRosaPastel w-100 justify-content-center">
+                <h1 class="text-center row justify-content-center align-items-center h1">¿Como usar tu rutina Dagos?</h1>
+                
 
-              <div class="col ">
-                <div class="cardFacial ">
-                  <img src="../assets/img/lavado-de-cara.png" class="card-img-top cover bgRosaPastel" alt="...">
-                  <div class="card-body p-0 bgRosaPastel">
-                   
-                    <p class="card-text">Limpieza: Paso Fundamental.
-                      Comienza con una limpieza suave para eliminar impurezas y preparar la piel.</p>
-                    
+                
+                <div class="col ">
+                  <div class="cardFacial imagen-container">
+                    <img  src="../assets/img/lavado-de-cara.png" class="card-img-top bgRosaPastel" alt="...">
+                    <img class="imagen-hover" src="../assets/img/cambio-limpieza.png" alt="">
+                    <div class="card-body p-0 bgRosaPastel">
+                      <h5 class="h5">1 | Gel de limpieza</h5>
+                      <p class="card-text">Mascarilla: Tratamiento Intensivo.
+                      Usa una mascarilla semanal para un impulso adicional de cuidado.</p></div>
                   </div>
                 </div>
-              </div>
 
-              <div class="col">
-                <div class="cardFacial">
-                  <img src="../assets/img/lavado-de-cara.png" class="card-img-top cover bgRosaPastel" alt="...">
-                  <div class="card-body p-0 bgRosaPastel">
-                   
-                    <p class="card-text">Serum: Nutrición Esencial.
-                      Aplica un suero específico para hidratar y tratar problemas de la piel.</p>
-                    
+                <div class="col">
+                  <div class="cardFacial imagen-container">
+                    <img  src="../assets/img/proteccion-de-la-piel.png" class="card-img-top bgRosaPastel" alt="...">
+                    <img class="imagen-hover" src="../assets/img/cambio-hidratación.png" alt="">
+                    <div class="card-body p-0 bgRosaPastel">
+                      <h5 class="h5">2 | Crema hidratante</h5>
+                      <p class="card-text">Utiliza una pequeña cantidad todos los dias para devolver la hidratación post higiene. Una vez por semana la podés usar como mascarilla.</p></div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="cardFacial">
-                  <img src="../assets/img/lavado-de-cara.png" class="card-img-top bgRosaPastel" alt="...">
-                  <div class="card-body p-0 bgRosaPastel">
-                    
-                    <p class="card-text">Mascarilla: Tratamiento Intensivo.
-                      Usa una mascarilla semanal para un impulso adicional de cuidado.</p>
-                   
+
+                <div class="col">
+                  <div class="cardFacial imagen-container">
+                    <img  src="../assets/img/salud-y-cuidado.png" class="card-img-top bgRosaPastel" alt="...">
+                    <img class="imagen-hover" src="../assets/img/cambio-reparador.png" alt="">
+                    <div class="card-body p-0 bgRosaPastel">
+                       <h5 class="h5">3 | Serum reparador</h5>
+                       <p class="card-text">Usa una mascarilla semanal para un impulso adicional de cuidado.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+
             </div>
           </section> 
                 
@@ -110,12 +115,12 @@
                     </div>
                     <div class="col-4">
                         <form class="subscription-form">
-                            <input type="email" class="form-control is-invalid" id="email" placeholder="Escribe tu correo electrónico" required>
+                            <input type="email"  id="email" placeholder="Escribe tu correo electrónico" required>
                         </form>
                     </div>
                     <div class="col-4">
                         <form action="">
-                            <button type="submit" class="boton boton:hover">Enviar</button>
+                          <a href="./404.html" class="boton boton:hover mt-3" >Enviar</a>
                         </form>
                     </div>
                 </div>
@@ -126,25 +131,25 @@
               <div class="footer-column">
                   <h4>Preguntas Frecuentes</h4>
                   <ul>
-                      <li><a href="#">¿Dónde comprar?</a></li>
-                      <li><a href="#">¿Cómo comprar?</a></li>
+                      <li><a href="./404.html">¿Dónde comprar?</a></li>
+                      <li><a href="./404.html">¿Cómo comprar?</a></li>
                   </ul>
               </div>
               <div class="footer-column">
         
                   <ul>
-                      <li><a href="./pages/contacto.html">Acuerdos y condiciones</a></li>
-                      <li><a href="./pages/contacto.html">Contactate con nosotros</a></li>
-                      <li><a href="./pages/recomendados.html">Glosario del cuidado de la piel</a></li>
-                      <li><a href="./pages/contacto.html">Políticas de privacidad</a></li>
+                      <li><a href="./contacto.html">Acuerdos y condiciones</a></li>
+                      <li><a href="./contacto.html">Contactate con nosotros</a></li>
+                      <li><a href="./recomendados.html">Glosario del cuidado de la piel</a></li>
+                      <li><a href="./contacto.html">Políticas de privacidad</a></li>
                       
                   </ul>
               </div>
               <div class="footer-column">
                   <div class="social-icons">
                     <a class="anclaFooter" target="_blank" href="http://www.whatsapp.com"><i class="fa-brands fa-whatsapp icon"></i></a>
-                    <a class="anclaFooter" target="_blank" href=""><i class="fa-brands fa-facebook icon"></i></a>
-                    <a class="anclaFooter" target="_blank" href=""><i class="fa-brands fa-instagram icon"></i></a>
+                    <a class="anclaFooter" target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook icon"></i></a>
+                    <a class="anclaFooter" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram icon"></i></a>
                   </div>
               </div>
           </div>

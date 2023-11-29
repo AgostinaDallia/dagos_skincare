@@ -1,0 +1,63 @@
+
+.h1{
+    /*color: #D83E23;*/
+    color:#7B4728;
+    font-weight: lighter;
+    text-align: center;
+}
+.h2{
+    background-color: rgba(255, 255, 255, 0.685);
+    color: #D83E23;
+    text-align: center;
+}
+.h3{
+    @include titulos( #7B4728,none,center);
+}
+
+.h5{
+    color: #7B4728;
+    text-align: center;
+    font-weight: bold;
+}
+.h6{
+    @include titulos( #7B4728,none,center);
+
+}
+
+.precio{
+    color:#D83E23;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+
+}
+span{
+    color:#7B4728;
+    font-weight: bold;
+}
+.hijo{
+    width:200px;
+    height:200px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    color:black;
+    margin-bottom: 10px;
+}
+.hijo img{
+    width:85%;
+    height:85%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:5px solid white;
+   /* margin-top: 20px;*/
+    transition: transform 1s ease-in-out;
+   /* filter: grayscale(20%);*/
+    &:hover{
+        transform: scale(1.1);
+      
+    }
+    
+}

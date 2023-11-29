@@ -4,7 +4,9 @@
         <!--las etiq meta son de configuración-->
         <meta charset="UTF-8"><!--el contenido puede estar en español-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--un px es lo mismo en escritorio que en celular-->
-        <title>Recomendados</title><!--cerrada, es lo unico hasta aca que ve el usuario-->
+        <meta name="description" content="Descubre la guía definitiva de cuidado de la piel con Dagos Skincare. Encuentra recomendaciones expertas de serums, cremas y mascarillas enriquecidos con minerales esenciales para rejuvenecer tu piel. Nuestra colección ofrece soluciones personalizadas con ingredientes naturales y científicamente avanzados. Transforma tu rutina de belleza con productos de calidad premium y despierta la luminosidad de tu piel con Dagos Skincare.">
+        <meta name="keywords" content="Dagos Skincare, cuidado de la piel, productos faciales, productos corporales, skincare, serums, cremas, mascarillas, minerales para la piel, recomendaciones de belleza, rutina de cuidado facial, ingredientes naturales, rejuvenecimiento facial, skincare de lujo, tratamientos faciales, belleza saludable, luminosidad de la piel">
+        <title>Recomendados | Dagos Skincare</title><!--cerrada, es lo unico hasta aca que ve el usuario-->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
          <!--link de css bootstrap--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css">
@@ -16,7 +18,7 @@
             <nav class="navbar navbar-expand-lg navbar-light p-0 bgRosaPastel">
                 <div class="container-fluid">
                   <a class="navbar-brand p-0" href="#">
-                    <img class="logo " src="../assets/img/LogoDagos.png" alt="Logo" width="100px">
+                    <img class="logo" href="../index.html" src="../assets/img/LogoDagos.png" alt="Logo" width="100px">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,49 +49,57 @@
         </header>
         <main>
        
-          <h1 class="h1 mt-4 mb-5">¿Sabés qué producto usar según tus necesidades?</h1>    
-         
+          <h1 class="h1 mt-4 mb-5">¿Sabés qué producto usar según tus <span>necesidades</span>?</h1>    
           <section class="tarjetaVideo container">
-              <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-md-6 text-center">
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dLFBTiP5WTI?si=vDMOD3Q61SOrLNqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- Clases para ocultar el iframe en pantallas medianas y grandes -->
+                    <div class="d-none d-md-block">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dLFBTiP5WTI?si=vDMOD3Q61SOrLNqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <!-- Clases para mostrar el iframe solo en pantallas medianas y pequeñas -->
+                    <div class="d-block d-md-none embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dLFBTiP5WTI?si=vDMOD3Q61SOrLNqP" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 text-center">
-                 <h3>Ácido Hialuronico</h3>
-                 <p>Este video te presenta el asombroso mundo del ácido hialurónico y sus beneficios para la piel. Descubre cómo esta sustancia puede hidratar, rejuvenecer y revitalizar tu piel, dándote un aspecto fresco y radiante. Acompáñanos en este viaje hacia una piel más saludable y joven.</p>
+                    <h3>Ácido Hialurónico</h3>
+                    <p>Este video te presenta el asombroso mundo del ácido hialurónico y sus beneficios para la piel. Descubre cómo esta sustancia puede hidratar, rejuvenecer y revitalizar tu piel, dándote un aspecto fresco y radiante. Acompáñanos en este viaje hacia una piel más saludable y joven.</p>
                 </div>
-              </div>
-          </section>
+            </div>
+        </section>
+
+          
           <div>
-            <table class="table table-warning mt-5 ">
+            <table class="table table-warning mt-5 bg">
               <thead>
                 <tr>
-                  <th scope="col">Tipo de piel</th>
-                  <th scope="col">Ácido Glicólico </th>
-                  <th scope="col">Ácido Salicílico</th>
-                  <th scope="col">Ácido Retinoico</th>
+                  <th class="h5" scope="col">Tipo de piel</th>
+                  <th class="h5" scope="col">Ácido Glicólico </th>
+                  <th class="h5" scope="col">Ácido Salicílico</th>
+                  <th class="h5" scope="col">Ácido Retinoico</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Acné</th>
-                  <td>SI</td>
-                  <td>SI</td>
-                  <td>SI</td>
+                  <th class="precio" scope="row">Acné</th>
+                  <td class="h6">SI</td>
+                  <td class="h6">SI</td>
+                  <td class="h6">SI</td>
                  
                 </tr>
                 <tr>
-                  <th scope="row">Exfoliante</th>
-                  <td>SI </td>
-                  <td>SI </td>
-                  <td>SI </td>
+                  <th class="precio" scope="row">Exfoliante</th>
+                  <td class="h6">SI </td>
+                  <td class="h6">SI </td>
+                  <td class="h6">SI </td>
                   
                 </tr>
                 <tr>
-                  <th scope="row">Anti edad</th>
-                  <td>SI</td>
-                  <td>NO</td>
-                  <td>SI</td>
+                  <th class="precio" scope="row">Anti edad</th>
+                  <td class="h6">SI</td>
+                  <td class="h6">NO</td>
+                  <td class="h6">SI</td>
                 </tr>
               </tbody>
             </table>
@@ -106,12 +116,12 @@
                     </div>
                     <div class="col-4">
                         <form class="subscription-form">
-                            <input type="email" class="form-control is-invalid" id="email" placeholder="Escribe tu correo electrónico" required>
+                            <input type="email"  id="email" placeholder="Escribe tu correo electrónico" required>
                         </form>
                     </div>
                     <div class="col-4">
                         <form action="">
-                            <button type="submit" class="boton boton:hover">Enviar</button>
+                          <a href="./404.html" class="boton boton:hover mt-3" >Enviar</a>
                         </form>
                     </div>
                 </div>
@@ -122,25 +132,25 @@
               <div class="footer-column">
                   <h4>Preguntas Frecuentes</h4>
                   <ul>
-                      <li><a href="#">¿Dónde comprar?</a></li>
-                      <li><a href="#">¿Cómo comprar?</a></li>
+                      <li><a href="./404.html">¿Dónde comprar?</a></li>
+                      <li><a href="./404.html">¿Cómo comprar?</a></li>
                   </ul>
               </div>
               <div class="footer-column">
         
                   <ul>
-                      <li><a href="./pages/contacto.html">Acuerdos y condiciones</a></li>
-                      <li><a href="./pages/contacto.html">Contactate con nosotros</a></li>
-                      <li><a href="./pages/recomendados.html">Glosario del cuidado de la piel</a></li>
-                      <li><a href="./pages/contacto.html">Políticas de privacidad</a></li>
+                      <li><a href="./contacto.html">Acuerdos y condiciones</a></li>
+                      <li><a href="./contacto.html">Contactate con nosotros</a></li>
+                      <li><a href="./recomendados.html">Glosario del cuidado de la piel</a></li>
+                      <li><a href="./contacto.html">Políticas de privacidad</a></li>
                       
                   </ul>
               </div>
               <div class="footer-column">
                   <div class="social-icons">
                     <a class="anclaFooter" target="_blank" href="http://www.whatsapp.com"><i class="fa-brands fa-whatsapp icon"></i></a>
-                    <a class="anclaFooter" target="_blank" href=""><i class="fa-brands fa-facebook icon"></i></a>
-                    <a class="anclaFooter" target="_blank" href=""><i class="fa-brands fa-instagram icon"></i></a>
+                    <a class="anclaFooter" target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook icon"></i></a>
+                    <a class="anclaFooter" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram icon"></i></a>
                   </div>
               </div>
           </div>

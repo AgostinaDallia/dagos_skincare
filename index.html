@@ -4,20 +4,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DAGOS Skincare</title>
+        <meta name="description" content="Descubre la belleza natural con Dagos Skincare. Nuestra línea de productos cosméticos faciales y corporales está diseñada para cuidar y realzar tu piel. Encuentra soluciones efectivas para cada tipo de piel, desde revitalizantes faciales hasta cremas corporales nutritivas. Experimenta la excelencia en cuidado de la piel con ingredientes de alta calidad. ¡Únete a nosotros para lograr una piel radiante y saludable con Dagos Skincare!">
+        <meta name="keywords" content="Dagos Skincare, productos faciales, productos corporales, cuidado de la piel, belleza natural, rutina de belleza, revitalizantes faciales, cremas corporales, cuidado facial, cuidado corporal, ingredientes naturales, hidratación, antienvejecimiento, belleza saludable, skincare de lujo">
+        <title>Dagos Skincare | Cosmeticos</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/estilos.css">
         <!--favicon-->
         <link rel="icon" type="image/png" href="favicon.ico">
         <!--iconos de fontawesome-->
         <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light p-0 bgRosaPastel">
             <div class="container-fluid">
-              <a class="navbar-brand p-0" href="#">
-                <img class="logo " src="./assets/img/LogoDagos.png" alt="Logo" width="100px">
+              <a href="./index.html" class="navbar-brand p-0" href="#">
+                <img class="logo "  src="./assets/img/LogoDagos.png" alt="Logo" width="100px">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,50 +49,65 @@
             </div>
             
           </nav> 
-    </header>
-    <main>
-        <!--<div class="container-fluid ">
-            <video width="1310" height="600" autoplay muted loop class="video">
+      </header>
+
+      <main>
+        
+              <video class="video1" autoplay muted loop>
                 <source src="./assets/video/portada.mp4" type="video/mp4">
+              </video>
+        
+            <video class="video2" autoplay muted loop>
+              <source src="./assets/video/Mini-portada.mp4" type="video/mp4">
             </video>
+           
+       
+          <section class="row-cols-2">
+          <div class="galeria pt-0">
+            <div>
+              <h1 class="h1">Nuestros</h1>
+              <h1 class="h1">Productos</h1>
+            </div>
 
-
-        </div>-->
-        <video class="video" autoplay muted playsinline>
-          <source src="./assets/video/portada.mp4" type="video/mp4">
-         
-        </video> 
-        <section class="texto">
-          <h1 class="h1">Quienes somos?</h1>
-          <p class="text center">¡Bienvenidos al mundo de la belleza y el bienestar! En Dagos, nuestro compromiso es cuidar tu piel con productos de alta calidad diseñados para realzar tu belleza natural. Descubre una gama de soluciones para el cuidado facial y corporal que te llevarán a una experiencia de cuidado personalizada. Permítenos ser tu aliado en el viaje hacia una piel radiante y saludable. Tu belleza merece lo mejor, y aquí es donde comienza</p>
-        </section>
-
-        <div class="galeria">
-          <div class="hijo">
-           <img src="./assets/img/recomendados.png" alt="Galeria">
-           <h4 class="mt-2">Cremas</h4>
-
-          </div>
-          <div class="hijo">
-           <img src="./assets/img/serum.png" alt="Galeria">
-           <h4 class="mt-2">Serums</h4>
-          </div>
-          <div class="hijo">
-           <img src="./assets/img/serum_2.png" alt="Galeria">
-           <h4 class="mt-2">Aceites</h4>
-          </div>
-          <div class="hijo">
-           <img src="./assets/img/corporal.png" alt="Galeria">
-           <h4 class="mt-2">Esencia</h4>
-          </div>
-          <div class="hijo">
-            <img src="./assets/img/serum_2.png" alt="Galeria">
-            <h4 class="mt-2">Mascarilla</h4>
-           </div>
+          <a href="./pages/facial.html">
+            <div class="hijo mt-2 pt-0 ">
+              <img class="sombra" src="./assets/img/recomendados.png" alt="Galeria">
+              <h6 class="h6 mt-2">Cremas</h6>
+            </div>
+          </a>
+          <a href="./pages/facial.html">
+            <div class="hijo mt-2 pt-0">
+              <img src="./assets/img/serum.png" alt="Galeria">
+              <h6 class="h6 mt-2 mt-2">Serums</h6>
+            </div>
+          </a>
+          <a href="./pages/facial.html">
+            <div class="hijo mt-2 pt-0">
+              <img src="./assets/img/serum_2.png" alt="Galeria">
+              <h6 class="h6 mt-2">Aceites</h6>
+            </div>
+           </a>
+          <a href="./pages/corporal.html">
+            <div class="hijo mt-2 pt-0">
+              <img src="./assets/img/corporal.png" alt="Galeria">
+              <h6 class="h6 mt-2">Esencias</h6>
+            </div>
+          </a>
+          <a href="./pages/facial.html">
+            <div class="hijo mt-2 pt-0">
+              <img src="./assets/img/serum_2.png" alt="Galeria">
+              <h6 class="h6 mt-2">Mascarillas</h6>
+            </div>
+          </a>
           
-        </div>
+          </div>
 
        </div>  
+      </section>
+       <section class="texto">
+        <h1 class="h1"> ¿<span>Quienes</span> somos?</h1>
+         <p class="parrafo">¡Bienvenidos al mundo de la <span>belleza y el bienestar</span>! En Dagos, nuestro compromiso es <span>cuidar tu piel</span> con productos de alta calidad diseñados para realzar tu belleza natural. Descubre una gama de <span>soluciones</span> para el cuidado facial y corporal que te llevarán a una experiencia de cuidado personalizada. Permítenos ser tu aliado en el viaje hacia una <span>piel radiante y saludable.</span> Tu belleza merece lo mejor, y aquí es donde comienza</p>
+     </section>
 
         
     </main>
@@ -105,12 +124,12 @@
               </div>
               <div class="col-4">
                   <form class="subscription-form">
-                      <input type="email" class="form-control is-invalid" id="email" placeholder="Escribe tu correo electrónico" required>
+                      <input type="email" id="email" placeholder="Escribe tu correo electrónico" required>
                   </form>
               </div>
               <div class="col-4">
                   <form action="">
-                      <button type="submit" class="boton boton:hover">Enviar</button>
+                    <a href="./pages/404.html" class="boton boton:hover mt-3" >Enviar</a>
                   </form>
               </div>
           </div>
@@ -121,8 +140,8 @@
         <div class="footer-column">
             <h4>Preguntas Frecuentes</h4>
             <ul>
-                <li><a href="#">¿Dónde comprar?</a></li>
-                <li><a href="#">¿Cómo comprar?</a></li>
+                <li><a href="./pages/404.html">¿Dónde comprar?</a></li>
+                <li><a href="./pages/404.html">¿Cómo comprar?</a></li>
             </ul>
         </div>
         <div class="footer-column">
@@ -138,8 +157,8 @@
         <div class="footer-column">
             <div class="social-icons">
               <a class="anclaFooter" target="_blank" href="http://www.whatsapp.com"><i class="fa-brands fa-whatsapp icon"></i></a>
-              <a class="anclaFooter" target="_blank" href=""><i class="fa-brands fa-facebook icon"></i></a>
-              <a class="anclaFooter" target="_blank" href=""><i class="fa-brands fa-instagram icon"></i></a>
+              <a class="anclaFooter" target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook icon"></i></a>
+              <a class="anclaFooter" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram icon"></i></a>
             </div>
         </div>
     </div>
