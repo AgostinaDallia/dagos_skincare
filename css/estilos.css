@@ -71,7 +71,6 @@ span {
 .hijo img, .corpo img {
   width: 85%;
   height: 85%;
-  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid white;
@@ -79,7 +78,6 @@ span {
   transition: transform 1s ease-in-out;
   /* filter: grayscale(20%);*/
 }
-
 .hijo img:hover, .corpo img:hover {
   transform: scale(1.1);
 }
@@ -90,7 +88,6 @@ span {
   position: sticky;
   z-index: 100;
 }
-
 .header .bgRosaPastel {
   background-color: #FFF6EF;
 }
@@ -98,7 +95,6 @@ span {
 .navbar-light .navbar-nav .nav-link.coral {
   color: coral;
 }
-
 .navbar-light .navbar-nav .nav-link.coral:hover {
   background-color: rgba(255, 255, 255, 0.87);
   border-bottom: 1px solid #D83E23;
@@ -115,7 +111,6 @@ span {
   display: none;
   overflow: hidden;
   position: relative;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -249,12 +244,9 @@ span {
 .carousel {
   max-height: 300px; /* Establece la altura máxima deseada para el carrusel */
 }
-
 .carousel .carousel-item img {
   max-height: 300px; /* Ajusta la altura máxima de las imágenes de las diapositivas */
-  -o-object-fit: cover;
   object-fit: cover; /* Evita la deformación y recorta la imagen si es necesario */
-  -o-object-position: botton;
   object-position: botton;
 }
 
@@ -310,7 +302,6 @@ span {
   border-radius: 5px;
   border: 1px solid #D83E23;
 }
-
 .boton:hover {
   color: #fff;
   background-color: rgba(216, 62, 35, 0.7803921569);
@@ -325,26 +316,21 @@ span {
   text-align: center;
   border-top: 1px solid coral;
 }
-
 .footer .icon {
   font-size: 3rem;
   color: #D83E23;
   padding-right: 15px;
 }
-
 .footer .contenedorMapaInfo {
   margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 50px;
   column-gap: 50px;
 }
-
 .footer .contenedorMapaInfo .contenedorInfo {
   text-align: left;
 }
-
 .footer .contenedorMapaInfo .contenedorInfo .parrafoInfoFooter {
   padding-bottom: 10px;
 }
@@ -392,6 +378,20 @@ suscribite {
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
-} 
+}
+
+.notfound {
+  height: 600px;
+}
+
+.aguita_rosa {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-image: url(../assets/img/fondoAguitaRosa.png);
+  width: 100%;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid coral;
+}
 
 /*# sourceMappingURL=estilos.css.map */
